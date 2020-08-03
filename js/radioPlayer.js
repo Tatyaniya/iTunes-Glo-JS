@@ -75,4 +75,9 @@ export const radioPlayerInit = () => {
             radioMute.classList.remove('volume-off');
         }
     });
+
+    radioPlayerInit.stop = () => {
+        audio.pause();
+        changeIconPlay();
+    };
 }
